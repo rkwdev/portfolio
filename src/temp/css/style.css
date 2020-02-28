@@ -1,0 +1,13 @@
+body {
+  background-color: #e700c1;
+  color: white;
+  -webkit-columns: 300px 2;
+     -moz-columns: 300px 2;
+          columns: 300px 2;
+}
+
+body h1 {
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

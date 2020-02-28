@@ -1,0 +1,12 @@
+$color: rgb(255, 255, 255);
+$background: #e700c1;
+
+body {
+    background-color: $background;
+    color: $color;
+    columns: 300px 2;
+
+    h1 {
+        font-size: 30px;
+    }
+}
