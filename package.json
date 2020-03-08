@@ -9,6 +9,7 @@
   "author": "Rokun",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
     "jquery": "^3.4.1"
   },
   "devDependencies": {

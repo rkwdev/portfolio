@@ -1,0 +1,8 @@
+// Set Text Color
+@function set-color($color) {
+    @if (lightness($color) > 40%) {
+        @return #333;
+    } @else {
+        @return #999;
+    }
+}

@@ -1,0 +1,58 @@
+.skills {
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(173.33px, 1fr));
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+    }
+
+    &__item {
+        text-align: center;
+        border: 1px solid set-color($primary-color);
+        padding: 1rem;
+
+        h2 {
+            font-weight: 300;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        img {
+            width: 75px;
+        }
+
+        i.fa-html5 {
+            color: #e34f26;
+        }
+        i.fa-css3-alt {
+            color: #1572b6;
+        }
+        i.fa-sass {
+            color: #cd6799;
+        }
+        i.fa-bootstrap {
+            color: #563d7c;
+        }
+        i.fa-js {
+            color: #f0db4f;
+        }
+        i.fa-github {
+            color: set-color($primary-color);
+        }
+        i.fa-gulp {
+            color: #db4446;
+        }
+        i.fa-npm {
+            color: #db4446;
+        }
+        i.fa-react {
+            color: #61dbfb;
+        }
+        i.fa-node-js {
+            color: #3c873a;
+        }
+        i.fa-database {
+            color: #3fa037;
+        }
+    }
+}

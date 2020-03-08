@@ -105,19 +105,19 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _Person = __webpack_require__(/*! ./modules/Person */ \"./src/assets/js/modules/Person.js\");\n\nvar _Person2 = _interopRequireDefault(_Person);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar john = new _Person2.default('John Doe', 'gre');\njohn.greet();\n\nvar jane = new _Person2.default('Jane smith', 'red');\njane.greet();\n\n//# sourceURL=webpack:///./src/assets/js/App.js?");
+eval("\n\nvar _Menu = __webpack_require__(/*! ./modules/Menu */ \"./src/assets/js/modules/Menu.js\");\n\nvar _Menu2 = _interopRequireDefault(_Menu);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\n//# sourceURL=webpack:///./src/assets/js/App.js?");
 
 /***/ }),
 
-/***/ "./src/assets/js/modules/Person.js":
-/*!*****************************************!*\
-  !*** ./src/assets/js/modules/Person.js ***!
-  \*****************************************/
+/***/ "./src/assets/js/modules/Menu.js":
+/*!***************************************!*\
+  !*** ./src/assets/js/modules/Menu.js ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar Person = function () {\n    function Person(fullName, favColor) {\n        _classCallCheck(this, Person);\n\n        this.name = fullName;\n        this.favColor = favColor;\n    }\n\n    _createClass(Person, [{\n        key: \"greet\",\n        value: function greet() {\n            console.log(\"Hello, my name is \" + this.name + \" and my favorite color is \" + this.favColor);\n        }\n    }]);\n\n    return Person;\n}();\n\nexports.default = Person;\n\n//# sourceURL=webpack:///./src/assets/js/modules/Person.js?");
+eval("\n\nvar menuBtn = document.querySelector(\".menu-btn\");\nvar hamburger = document.querySelector(\".menu-btn__burger\");\nvar nav = document.querySelector(\".nav\");\nvar menuNav = document.querySelector(\".menu-nav\");\nvar navItems = document.querySelectorAll(\".menu-nav__item\");\n\nvar showMenu = false;\n\nmenuBtn.addEventListener(\"click\", toggleMenu);\n\nfunction toggleMenu() {\n    if (!showMenu) {\n        hamburger.classList.add(\"open\");\n        nav.classList.add(\"open\");\n        menuNav.classList.add(\"open\");\n        navItems.forEach(function (item) {\n            return item.classList.add(\"open\");\n        });\n\n        showMenu = true;\n    } else {\n        hamburger.classList.remove(\"open\");\n        nav.classList.remove(\"open\");\n        menuNav.classList.remove(\"open\");\n        navItems.forEach(function (item) {\n            return item.classList.remove(\"open\");\n        });\n\n        showMenu = false;\n    }\n}\n\n//# sourceURL=webpack:///./src/assets/js/modules/Menu.js?");
 
 /***/ })
 

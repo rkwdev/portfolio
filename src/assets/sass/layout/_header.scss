@@ -1,0 +1,87 @@
+.main-header {
+    box-shadow: 0 1px 1px rgba(set-color($primary-color), 0.2);
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: $primary-color;
+
+    &__grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @include mq(max-width, 900) {
+            flex-direction: column;
+        }
+    }
+
+    .brand {
+        @include mq(max-width, 900) {
+            text-align: left;
+            width: 100%;
+        }
+
+        &__logo {
+            text-decoration: none;
+            font-size: 3rem;
+            line-height: 5rem;
+            display: block;
+            color: set-color($primary-color);
+            @include transition;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+
+    nav {
+        @include mq(max-width, 900) {
+            position: relative;
+            width: 100%;
+        }
+    }
+
+    .menu {
+        list-style: none;
+        padding: 0;
+
+        @include mq(max-width, 900) {
+            text-align: center;
+            background-color: rgba($color: $primary-color, $alpha: 0.95);
+            color: set-color($primary-color);
+            position: absolute;
+            top: 0.5rem;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 6rem);
+            z-index: 10;
+        }
+
+        li {
+            display: inline-block;
+            padding: 0 1.2em;
+
+            @include mq(max-width, 900) {
+                display: block;
+                padding: 1rem 0;
+            }
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            font-weight: 400;
+            color: set-color($primary-color);
+            font-size: 1.1rem;
+            @include transition;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}

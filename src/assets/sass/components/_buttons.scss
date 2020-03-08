@@ -1,0 +1,10 @@
+.btn {
+    &:hover {
+        border-color: $secondary-color;
+    }
+
+    &--hire {
+        border: 1px solid set-color($primary-color);
+        padding: 0.5rem 1.1rem;
+    }
+}

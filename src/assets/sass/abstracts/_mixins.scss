@@ -1,0 +1,18 @@
+// Transition
+@mixin transition {
+    transition: all 250ms linear;
+}
+
+// Media Queries
+@mixin mq($w, $value) {
+    @if $w == max-width {
+        @media (max-width: $value+px) {
+            @content;
+        }
+    }
+    @if $w == min-width {
+        @media (min-width: $value+px) {
+            @content;
+        }
+    }
+}
