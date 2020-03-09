@@ -21,6 +21,11 @@
             width: 75px;
         }
 
+        img.f-width {
+            width: 100%;
+            margin: 1rem 0 1rem;
+        }
+
         i.fa-html5 {
             color: #e34f26;
         }
@@ -53,6 +58,9 @@
         }
         i.fa-database {
             color: #3fa037;
+        }
+        i.fa-wordpress {
+            color: #0073aa;
         }
     }
 }

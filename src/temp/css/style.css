@@ -6184,6 +6184,11 @@ p {
   width: 75px;
 }
 
+.skills__item img.f-width {
+  width: 100%;
+  margin: 1rem 0 1rem;
+}
+
 .skills__item i.fa-html5 {
   color: #e34f26;
 }
@@ -6226,6 +6231,10 @@ p {
 
 .skills__item i.fa-database {
   color: #3fa037;
+}
+
+.skills__item i.fa-wordpress {
+  color: #0073aa;
 }
 
 /*# sourceMappingURL=style.css.map */
