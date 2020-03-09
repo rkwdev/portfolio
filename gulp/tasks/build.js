@@ -7,15 +7,6 @@ const gulp = require("gulp"),
     uglify = require("gulp-uglify"),
     browserSync = require("browser-sync").create();
 
-gulp.task("previewDist", async () => {
-    browserSync.init({
-        notify: false,
-        server: {
-            baseDir: "dist"
-        }
-    });
-});
-
 gulp.task("deleteDistFolder", async () => {
     return del("./dist");
 });
@@ -70,7 +61,6 @@ gulp.task(
         "copyGeneralFiles",
         "copyOtherTempFiles",
         "optimizeImages",
-        "usemin",
-        "previewDist"
+        "usemin"
     )
 );
