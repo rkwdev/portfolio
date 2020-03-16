@@ -1,7 +1,18 @@
 const $ = require("jquery");
+import mixitup from "mixitup";
 
-$(".works__wrapper").isotope({
-    // options
-    itemSelector: ".works__item",
-    layoutMode: "fitRows"
-});
+class Works {
+    constructor() {
+        this.mixer = mixitup(".works__wrapper");
+        this.filter();
+    }
+
+    filter() {
+        $(".works__controls li").click(function() {
+            $(".works__controls li").removeClass("active");
+            $(this).addClass("active");
+        });
+    }
+}
+
+export default Works;

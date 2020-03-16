@@ -1,27 +1,31 @@
-const menuBtn = document.querySelector(".menu-btn");
-const hamburger = document.querySelector(".menu-btn__burger");
-const nav = document.querySelector(".nav");
-const menuNav = document.querySelector(".menu-nav");
-const navItems = document.querySelectorAll(".menu-nav__item");
+class Menu {
+    constructor() {
+        this.menuBtn = document.querySelector(".nav-toggler");
+        // this.menuIcon = document.querySelector(".nav-toggler__icon");
+        this.menu = document.querySelector(".menu");
+        this.showMenu = false;
+        this.toggleMenu();
+    }
 
-let showMenu = false;
+    // const hamburger = document.querySelector(".menu-btn__burger");
+    // const menuNav = document.querySelector(".menu-nav");
+    // const navItems = document.querySelectorAll(".menu-nav__item");
 
-menuBtn.addEventListener("click", toggleMenu);
+    toggleMenu() {
+        this.menuBtn.addEventListener("click", () => {
+            if (!this.showMenu) {
+                this.menu.classList.add("open");
+                this.menuBtn.classList.add("open");
 
-function toggleMenu() {
-    if (!showMenu) {
-        hamburger.classList.add("open");
-        nav.classList.add("open");
-        menuNav.classList.add("open");
-        navItems.forEach(item => item.classList.add("open"));
+                this.showMenu = true;
+            } else {
+                this.menu.classList.remove("open");
+                this.menuBtn.classList.remove("open");
 
-        showMenu = true;
-    } else {
-        hamburger.classList.remove("open");
-        nav.classList.remove("open");
-        menuNav.classList.remove("open");
-        navItems.forEach(item => item.classList.remove("open"));
-
-        showMenu = false;
+                this.showMenu = false;
+            }
+        });
     }
 }
+
+export default Menu;

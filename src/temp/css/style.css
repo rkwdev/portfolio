@@ -6002,8 +6002,16 @@ ul {
   padding: 0.5rem 1.1rem;
 }
 
+@media (max-width: 900px) {
+  .btn--hire {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .main-header {
-  box-shadow: 0 1px 1px rgba(153, 153, 153, 0.2);
+  border-bottom: 1px solid rgba(153, 153, 153, 0.2);
   height: 5rem;
   position: fixed;
   top: 0;
@@ -6037,7 +6045,7 @@ ul {
   text-decoration: none;
   font-size: 3rem;
   line-height: 5rem;
-  display: block;
+  display: inline-block;
   color: #999;
   transition: all 250ms linear;
 }
@@ -6053,6 +6061,61 @@ ul {
   }
 }
 
+@media (max-width: 900px) {
+  .main-header .nav-toggler {
+    width: 1.8rem;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .main-header .nav-toggler__icon, .main-header .nav-toggler__icon:before, .main-header .nav-toggler__icon:after {
+    background: #999;
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    transition: all 200ms linear;
+  }
+  .main-header .nav-toggler__icon {
+    position: relative;
+  }
+  .main-header .nav-toggler__icon:before, .main-header .nav-toggler__icon:after {
+    content: "";
+    position: absolute;
+  }
+  .main-header .nav-toggler__icon:before {
+    top: -7px;
+  }
+  .main-header .nav-toggler__icon:after {
+    top: 7px;
+  }
+  .main-header .nav-toggler:hover .nav-toggler__icon,
+  .main-header .nav-toggler:hover .nav-toggler__icon:before,
+  .main-header .nav-toggler:hover .nav-toggler__icon:after {
+    background-color: #b33771;
+  }
+  .main-header .nav-toggler.open .nav-toggler__icon {
+    background: transparent;
+  }
+  .main-header .nav-toggler.open .nav-toggler__icon:hover {
+    background: transparent;
+  }
+  .main-header .nav-toggler.open .nav-toggler__icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .main-header .nav-toggler.open .nav-toggler__icon:after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+}
+
 .main-header .menu {
   list-style: none;
   padding: 0;
@@ -6061,14 +6124,19 @@ ul {
 @media (max-width: 900px) {
   .main-header .menu {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.9);
     color: #999;
     position: absolute;
-    top: 0.5rem;
+    top: 0;
     left: 0;
     width: 100%;
-    height: calc(100vh - 6rem);
+    height: 0;
+    overflow: hidden;
     z-index: 10;
+    transition: all 200ms linear;
+  }
+  .main-header .menu.open {
+    height: calc(100vh - 5rem);
   }
 }
 
@@ -6081,6 +6149,9 @@ ul {
   .main-header .menu li {
     display: block;
     padding: 1rem 0;
+  }
+  .main-header .menu li:first-child {
+    margin-top: 1.5rem;
   }
 }
 
@@ -6193,6 +6264,11 @@ ul {
   margin: 1rem 0 1rem;
 }
 
+.skills__item img.low-width {
+  margin: 0;
+  width: 85%;
+}
+
 .skills__item i.fa-html5 {
   color: #e34f26;
 }
@@ -6241,9 +6317,34 @@ ul {
   color: #0073aa;
 }
 
+.works__controls {
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
+.works__controls li {
+  display: inline;
+  margin: 0 0.6em;
+  border: 1px solid #999;
+  color: #999;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+
+.works__controls li:hover {
+  border-color: #b33771;
+  color: #b33771;
+}
+
+.works__controls li.active {
+  border-color: #b33771;
+  color: #b33771;
+}
+
 .works__wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 }
@@ -6251,6 +6352,7 @@ ul {
 .works__item {
   position: relative;
   overflow: hidden;
+  height: 200px;
 }
 
 .works__item img {
@@ -6268,6 +6370,8 @@ ul {
   border: 1px solid rgba(153, 153, 153, 0.3);
   display: flex;
   flex-direction: column;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   opacity: 0;
   visibility: hidden;
   transform: scale(1.1);
@@ -6313,6 +6417,20 @@ ul {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer span {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.8em;
+}
+
+.footer img {
+  width: 120px;
 }
 
 /*# sourceMappingURL=style.css.map */

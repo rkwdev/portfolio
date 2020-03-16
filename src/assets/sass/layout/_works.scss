@@ -1,7 +1,30 @@
 .works {
+    &__controls {
+        margin-bottom: 3.5rem;
+        text-align: center;
+        li {
+            display: inline;
+            margin: 0 0.6em;
+            border: 1px solid set-color($primary-color);
+            color: set-color($primary-color);
+            padding: 0.5em 1em;
+            cursor: pointer;
+            @include transition;
+            &:hover {
+                border-color: $secondary-color;
+                color: $secondary-color;
+            }
+        }
+
+        li.active {
+            border-color: $secondary-color;
+            color: $secondary-color;
+        }
+    }
+
     &__wrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
         grid-column-gap: 2rem;
         grid-row-gap: 2rem;
     }
@@ -9,6 +32,7 @@
     &__item {
         position: relative;
         overflow: hidden;
+        height: 200px;
 
         img {
             width: 100%;
@@ -26,6 +50,7 @@
         border: 1px solid rgba(set-color($primary-color), 0.3);
         display: flex;
         flex-direction: column;
+        backface-visibility: hidden;
         opacity: 0;
         visibility: hidden;
         transform: scale(1.1);
