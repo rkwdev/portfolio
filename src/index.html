@@ -27,17 +27,17 @@
         <!-- favicon end -->
 
         <!-- build:css assets/css/style.css -->
-        <link rel="stylesheet" href="./temp/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
         <!-- endbuild -->
     </head>
 
-    <body>
+    <body id="home">
         <!-- header start -->
         <header class="main-header">
             <div class="container">
                 <div class="main-header__grid">
                     <div class="brand">
-                        <a href="#" class="brand__logo">Rokun Uddin</a>
+                        <a href="#home" class="brand__logo">Rokun Uddin</a>
                     </div>
 
                     <div class="nav-toggler">
@@ -46,11 +46,18 @@
 
                     <nav>
                         <ul class="menu">
-                            <li><a href="#about">About Me</a></li>
+                            <li>
+                                <a class="active" href="#about">About Me</a>
+                            </li>
                             <li><a href="#skills">My Skills</a></li>
                             <li><a href="#works">My Works</a></li>
                             <li>
-                                <a class="btn btn--hire" href="#">Hire Me</a>
+                                <a
+                                    class="btn btn--hire"
+                                    href="https://fiverr.com"
+                                    target="_blank"
+                                    >Hire Me</a
+                                >
                             </li>
                         </ul>
                     </nav>
@@ -60,7 +67,7 @@
         <!-- header end -->
 
         <!-- hero start -->
-        <div class="hero" id="about">
+        <section class="hero" id="about">
             <div class="container">
                 <div class="hero__about">
                     <div class="hero__detail">
@@ -81,7 +88,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- hero end -->
 
         <!-- skills start -->
@@ -319,12 +326,17 @@
         <!-- footer start -->
         <footer class="footer section">
             <span>Hire me on</span>
-            <a href="#"><img src="./assets/images/fiverr.png" alt="fiverr"/></a>
+            <!-- <a href="#"><img src="./assets/images/fiverr.png" alt="fiverr"/></a> -->
+            <a
+                href="https://fiverr.com"
+                target="_blank"
+                class="marketplace"
+            ></a>
         </footer>
         <!-- footer end -->
 
         <!-- build:js assets/js/app.js -->
-        <script src="./temp/js/app.js"></script>
+        <script src="./assets/js/app.js"></script>
         <!-- endbuild -->
     </body>
 </html>

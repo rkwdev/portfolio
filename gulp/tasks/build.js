@@ -17,15 +17,18 @@ gulp.task("copyGeneralFiles", async () => {
         "!./src/**/*.html",
         "!./src/assets/images/**/*",
         "!./src/assets/sass/**",
+        "!./src/assets/css/**",
+        "!./src/assets/js-modules/**",
         "!./src/assets/js/**",
-        "!./src/temp",
-        "!./src/temp/**"
+        "!./src/assets/webfonts/**"
+        // "!./src/temp",
+        // "!./src/temp/**"
     ];
     return gulp.src(pathsToCopy).pipe(gulp.dest("./dist"));
 });
 
-gulp.task("copyOtherTempFiles", async () => {
-    const pathsToCopy = ["./src/temp/webfonts/*"];
+gulp.task("copyOtherAssets", async () => {
+    const pathsToCopy = ["./src/assets/webfonts/*"];
     return gulp.src(pathsToCopy).pipe(gulp.dest("./dist/assets/webfonts"));
 });
 
@@ -59,7 +62,7 @@ gulp.task(
     gulp.series(
         "deleteDistFolder",
         "copyGeneralFiles",
-        "copyOtherTempFiles",
+        "copyOtherAssets",
         "optimizeImages",
         "usemin"
     )

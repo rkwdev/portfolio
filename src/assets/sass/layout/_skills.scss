@@ -2,8 +2,12 @@
     &__items {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(173.33px, 1fr));
+        grid-auto-rows: min-content;
         grid-column-gap: 2rem;
         grid-row-gap: 2rem;
+        @include mq(max-width, 649) {
+            padding: 0 1.5rem;
+        }
     }
 
     &__item {

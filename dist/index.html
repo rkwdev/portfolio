@@ -5,7 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Rokun Uddin | Web Developer</title>
 
-        <link rel="stylesheet" href="assets/css/style-09e2648420.css"/>
+        <!-- favicon start -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/images/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/images/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+        <!-- favicon end -->
+
+        <link rel="stylesheet" href="assets/css/style-563ece93cc.css"/>
     </head>
 
     <body>
@@ -16,6 +37,11 @@
                     <div class="brand">
                         <a href="#" class="brand__logo">Rokun Uddin</a>
                     </div>
+
+                    <div class="nav-toggler">
+                        <span class="nav-toggler__icon"></span>
+                    </div>
+
                     <nav>
                         <ul class="menu">
                             <li><a href="#about">About Me</a></li>
@@ -125,6 +151,15 @@
 
                     <div class="skills__item">
                         <img
+                            class="low-width"
+                            src="https://res.cloudinary.com/avatarhzh/image/upload/v1523067665/portfolio/tech-stack/nextjs.png"
+                            alt="Next JS"
+                        />
+                        <h2>Next JS</h2>
+                    </div>
+
+                    <div class="skills__item">
+                        <img
                             src="https://javascriptforwp.com/wp-content/uploads/2019/03/badge-gatsby.png"
                             alt="Gatsby JS"
                         />
@@ -172,10 +207,18 @@
         <section class="section works" id="works">
             <h1 class="section__heading">My Works</h1>
 
+            <div class="container works__controls">
+                <ul>
+                    <li data-filter="all" class="active">All</li>
+                    <li data-filter=".psd-to-html">Psd to Html</li>
+                    <li data-filter=".reactjs">React JS</li>
+                </ul>
+            </div>
+
             <div class="container works__wrapper">
-                <div class="works__item">
+                <figure class="mix works__item psd-to-html reactjs all">
                     <img src="./assets/images/works/1.png" alt="work 1" />
-                    <div class="works__item-details">
+                    <figcaption class="works__item-details">
                         <div class="works__item-link">
                             <a href="#"
                                 ><i class="fas fa-external-link-alt"></i
@@ -189,12 +232,12 @@
                                 <li>jQuery</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
+                    </figcaption>
+                </figure>
 
-                <div class="works__item">
+                <figure class="mix works__item reactjs all">
                     <img src="./assets/images/works/1.png" alt="work 1" />
-                    <div class="works__item-details">
+                    <figcaption class="works__item-details">
                         <div class="works__item-link">
                             <a href="#"
                                 ><i class="fas fa-external-link-alt"></i
@@ -208,12 +251,12 @@
                                 <li>jQuery</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
+                    </figcaption>
+                </figure>
 
-                <div class="works__item">
+                <figure class="mix works__item psd-to-html all">
                     <img src="./assets/images/works/1.png" alt="work 1" />
-                    <div class="works__item-details">
+                    <figcaption class="works__item-details">
                         <div class="works__item-link">
                             <a href="#"
                                 ><i class="fas fa-external-link-alt"></i
@@ -227,12 +270,12 @@
                                 <li>jQuery</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
+                    </figcaption>
+                </figure>
 
-                <div class="works__item">
+                <figure class="mix works__item psd-to-html reactjs all">
                     <img src="./assets/images/works/1.png" alt="work 1" />
-                    <div class="works__item-details">
+                    <figcaption class="works__item-details">
                         <div class="works__item-link">
                             <a href="#"
                                 ><i class="fas fa-external-link-alt"></i
@@ -246,12 +289,12 @@
                                 <li>jQuery</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
+                    </figcaption>
+                </figure>
 
-                <div class="works__item">
+                <figure class="mix works__item reactjs all">
                     <img src="./assets/images/works/1.png" alt="work 1" />
-                    <div class="works__item-details">
+                    <figcaption class="works__item-details">
                         <div class="works__item-link">
                             <a href="#"
                                 ><i class="fas fa-external-link-alt"></i
@@ -265,31 +308,20 @@
                                 <li>jQuery</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-
-                <div class="works__item">
-                    <img src="./assets/images/works/1.png" alt="work 1" />
-                    <div class="works__item-details">
-                        <div class="works__item-link">
-                            <a href="#"
-                                ><i class="fas fa-external-link-alt"></i
-                            ></a>
-                        </div>
-                        <div class="works__item-detail">
-                            <span>Built by:</span>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>jQuery</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                    </figcaption>
+                </figure>
             </div>
         </section>
         <!-- works end -->
 
-        <script src="assets/js/app-997c42a27a.js"></script>
+        <!-- footer start -->
+        <footer class="footer section">
+            <span>Hire me on</span>
+            <!-- <a href="#"><img src="./assets/images/fiverr.png" alt="fiverr"/></a> -->
+            <div class="marketplace"></div>
+        </footer>
+        <!-- footer end -->
+
+        <script src="assets/js/app-c2d33fbc2d.js"></script>
     </body>
 </html>

@@ -1,6 +1,6 @@
 // Transition
-@mixin transition($second: 250ms) {
-    transition: all $second linear;
+@mixin transition($second: 250ms, $timeFunc: linear) {
+    transition: all $second $timeFunc;
 }
 
 // Media Queries

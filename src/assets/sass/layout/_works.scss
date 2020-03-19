@@ -3,8 +3,8 @@
         margin-bottom: 3.5rem;
         text-align: center;
         li {
-            display: inline;
-            margin: 0 0.6em;
+            display: inline-block;
+            margin: 0 0.6em 0.6em;
             border: 1px solid set-color($primary-color);
             color: set-color($primary-color);
             padding: 0.5em 1em;
@@ -13,6 +13,12 @@
             &:hover {
                 border-color: $secondary-color;
                 color: $secondary-color;
+            }
+
+            @include mq(max-width, 649) {
+                margin: 0 0.4em 1em;
+                padding: 0.4em 0.8em;
+                font-size: 0.9rem;
             }
         }
 
@@ -25,6 +31,7 @@
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
+        grid-auto-rows: min-content;
         grid-column-gap: 2rem;
         grid-row-gap: 2rem;
     }
@@ -32,7 +39,7 @@
     &__item {
         position: relative;
         overflow: hidden;
-        height: 200px;
+        height: 100%;
 
         img {
             width: 100%;

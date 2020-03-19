@@ -1,15 +1,12 @@
 .hero {
     height: calc(90vh - 5rem);
     margin-top: 5rem;
-    // border: 1px solid rgb(0, 255, 128);
     display: flex;
     box-shadow: 0 2px 3px rgba($color: set-color($primary-color), $alpha: 0.1);
 
     &__about {
         display: flex;
-        // align-items: center;
         justify-content: space-between;
-        // border: 1px solid gold;
         align-items: flex-start;
         align-content: flex-start;
         height: 100%;
@@ -22,6 +19,7 @@
 
         @include mq(max-width, 900) {
             flex-basis: 100%;
+            padding: 0 0.5rem;
             text-align: center;
         }
 
@@ -33,15 +31,24 @@
 
         h1 {
             font-size: 2rem;
+            @include mq(max-width, 425) {
+                font-size: 1.5rem;
+            }
         }
 
         h2 {
             font-size: 2.5rem;
+            @include mq(max-width, 425) {
+                font-size: 1.9rem;
+            }
         }
 
         p {
             font-size: 1.3rem;
             margin: 0.5rem 0;
+            @include mq(max-width, 425) {
+                font-size: 1rem;
+            }
         }
     }
 
