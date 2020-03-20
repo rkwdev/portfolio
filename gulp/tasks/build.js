@@ -20,9 +20,9 @@ gulp.task("copyGeneralFiles", async () => {
         "!./src/assets/css/**",
         "!./src/assets/js-modules/**",
         "!./src/assets/js/**",
-        "!./src/assets/webfonts/**"
-        // "!./src/temp",
-        // "!./src/temp/**"
+        "!./src/assets/webfonts/**",
+        "!./src/temp",
+        "!./src/temp/**"
     ];
     return gulp.src(pathsToCopy).pipe(gulp.dest("./dist"));
 });
