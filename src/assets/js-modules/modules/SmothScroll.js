@@ -22,13 +22,26 @@ class SmothScroll {
     }
 
     addNavActive() {
-        $(".menu a").click(function() {
-            $(".menu a").removeClass("active");
-            $(this).addClass("active");
-        });
-        $(".brand__logo").click(function() {
-            $(".menu a").removeClass("active");
-        });
+        window.onscroll = function() {
+            let scrollPosY = window.pageYOffset | document.body.scrollTop;
+
+            $("section").each(function(i) {
+                if ($(this).position().top < scrollPosY + 150) {
+                    $(".menu a.active").removeClass("active");
+                    $(".menu a")
+                        .eq(i)
+                        .addClass("active");
+                }
+            });
+        };
+
+        // $(".menu a").click(function() {
+        //     $(".menu a").removeClass("active");
+        //     $(this).addClass("active");
+        // });
+        // $(".brand__logo").click(function() {
+        //     $(".menu a").removeClass("active");
+        // });
     }
 }
 
