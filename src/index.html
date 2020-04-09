@@ -1,342 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Rokun Uddin | Web Developer</title>
 
-        <!-- favicon start -->
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="./assets/images/favicon/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./assets/images/favicon/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="./assets/images/favicon/favicon-16x16.png"
-        />
-        <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
-        <!-- favicon end -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rokun Uddin | Web Developer</title>
 
-        <!-- build:css assets/css/style.css -->
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <!-- endbuild -->
-    </head>
+    <!-- favicon start -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+    <!-- favicon end -->
 
-    <body id="home">
-        <!-- header start -->
-        <header class="main-header">
-            <div class="container">
-                <div class="main-header__grid">
-                    <div class="brand">
-                        <a href="#home" class="brand__logo">Rokun Uddin</a>
+    <!-- build:css assets/css/style.css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- endbuild -->
+</head>
+
+<body id="home">
+    <!-- header start -->
+    <header class="main-header">
+        <div class="container">
+            <div class="main-header__grid">
+                <div class="brand">
+                    <a href="#home" class="brand__logo">Rokun Uddin</a>
+                </div>
+
+                <div class="nav-toggler">
+                    <span class="nav-toggler__icon"></span>
+                </div>
+
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a class="active" href="#about">About Me</a>
+                        </li>
+                        <li><a href="#skills">My Skills</a></li>
+                        <li><a href="#works">My Works</a></li>
+                        <li>
+                            <a class="btn btn--hire" href="https://www.fiverr.com/webpage_coder" target="_blank">Hire
+                                Me</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- hero start -->
+    <section class="hero" id="about">
+        <div class="container">
+            <div class="hero__about">
+                <div class="hero__detail">
+                    <h1>Hi there!</h1>
+                    <h2>My name is Rokun</h2>
+                    <p>
+                        I'm a freelance web developer. I create awesome web
+                        sites and web applications.
+                        <a href="https://www.fiverr.com/webpage_coder" target="_blank">Hire me</a>
+                        to build you a nice website or solve your problem.
+                    </p>
+                    <p>
+                        Take a look at my
+                        <a class="work-link" href="#works">work</a>.
+                    </p>
+                </div>
+                <div class="hero__image">
+                    <img src="./assets/images/me.png" alt="My Picture" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- skills start -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h1 class="section__heading">My Skills</h1>
+            <div class="skills__items">
+                <div class="skills__item">
+                    <i class="fab fa-html5 fa-5x"></i>
+                    <h2>HTML5</h2>
+                </div>
+
+                <div class="skills__item">
+                    <i class="fab fa-css3-alt fa-5x"></i>
+                    <h2>CSS3</h2>
+                </div>
+
+                <div class="skills__item">
+                    <i class="fab fa-sass fa-5x"></i>
+                    <h2>Sass</h2>
+                </div>
+
+                <div class="skills__item">
+                    <i class="fab fa-bootstrap fa-5x"></i>
+                    <h2>Bootstrap4</h2>
+                </div>
+
+                <div class="skills__item">
+                    <i class="fab fa-github fa-5x"></i>
+                    <h2>Git & GitHub</h2>
+                </div>
+
+                <div class="skills__item">
+                    <i class="fab fa-gulp fa-5x"></i>
+                    <h2>Gulp</h2>
+                </div>
+
+                <div class="skills__item">
+                    <i class="fab fa-npm fa-5x"></i>
+                    <h2>Npm</h2>
+                </div>
+
+                <div class="skills__item">
+                    <img src="https://webpack.js.org/d19378a95ebe6b15d5ddea281138dcf4.svg" alt="Webpack" />
+                    <h2>Webpack</h2>
+                </div>
+
+                <div class="skills__item">
+                    <i class="fab fa-js fa-5x"></i>
+                    <h2>JavaScript</h2>
+                </div>
+
+                <div class="skills__item">
+                    <img class="f-width"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/JQuery-Logo.svg/1280px-JQuery-Logo.svg.png"
+                        alt="jQuery" />
+                    <h2>jQuery</h2>
+                </div>
+
+                <div class="skills__item">
+                    <i class="fab fa-react fa-5x"></i>
+                    <h2>React JS</h2>
+                </div>
+
+                <!-- <div class="skills__item">
+                    <img class="low-width"
+                        src="https://res.cloudinary.com/avatarhzh/image/upload/v1523067665/portfolio/tech-stack/nextjs.png"
+                        alt="Next JS" />
+                    <h2>Next JS</h2>
+                </div>
+
+                <div class="skills__item">
+                    <img src="https://javascriptforwp.com/wp-content/uploads/2019/03/badge-gatsby.png"
+                        alt="Gatsby JS" />
+                    <h2>Gatsby JS</h2>
+                </div> -->
+
+                <div class="skills__item">
+                    <i class="fab fa-node-js fa-5x"></i>
+                    <h2>Node JS</h2>
+                </div>
+
+                <!-- <div class="skills__item">
+                            <i class="fas fa-database fa-5x"></i>
+                            <h2>Databases</h2>
+                        </div> -->
+
+                <div class="skills__item">
+                    <img class="f-width" src="https://developers.cloudflare.com/logos/expressjs.svg" alt="expressjs" />
+                    <h2>Express JS</h2>
+                </div>
+
+                <div class="skills__item">
+                    <img class="f-width"
+                        src="https://webassets.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png"
+                        alt="mongodb" />
+                    <h2>MongoDB</h2>
+                </div>
+
+                <div class="skills__item">
+                    <i class="fab fa-wordpress fa-5x"></i>
+                    <h2>WordPress</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills end -->
+
+    <!-- works start -->
+    <section class="section works" id="works">
+        <h1 class="section__heading">My Works</h1>
+
+        <div class="container works__controls">
+            <ul>
+                <li data-filter="all" class="active">All</li>
+                <li data-filter=".agency">Agency</li>
+                <li data-filter=".coffee">Coffee</li>
+                <li data-filter=".spa">SPA</li>
+                <li data-filter=".js">JavaScript</li>
+                <li data-filter=".portfolio">Portfolio</li>
+            </ul>
+        </div>
+
+        <div class="container works__wrapper">
+            <figure class="mix works__item agency all">
+                <img src="./assets/images/works/1.png" alt="work 1" />
+                <figcaption class="works__item-details">
+                    <div class="works__item-link">
+                        <a href="https://mdrokun.github.io/digital-marketing/" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
                     </div>
-
-                    <div class="nav-toggler">
-                        <span class="nav-toggler__icon"></span>
-                    </div>
-
-                    <nav>
-                        <ul class="menu">
-                            <li>
-                                <a class="active" href="#about">About Me</a>
-                            </li>
-                            <li><a href="#skills">My Skills</a></li>
-                            <li><a href="#works">My Works</a></li>
-                            <li>
-                                <a
-                                    class="btn btn--hire"
-                                    href="https://fiverr.com"
-                                    target="_blank"
-                                    >Hire Me</a
-                                >
-                            </li>
+                    <div class="works__item-detail">
+                        <span>Built by:</span>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                            <li>FontAwesome</li>
                         </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <!-- header end -->
-
-        <!-- hero start -->
-        <section class="hero" id="about">
-            <div class="container">
-                <div class="hero__about">
-                    <div class="hero__detail">
-                        <h1>Hi there!</h1>
-                        <h2>My name is Rokun</h2>
-                        <p>
-                            I'm a freelance web developer. I create awesome web
-                            sites and web applications.
-                            <a href="#">Hire me</a> to build you a nice website.
-                        </p>
-                        <p>
-                            Take a look at my <a href="#">work</a> or
-                            <a href="#">get in touch!</a>
-                        </p>
                     </div>
-                    <div class="hero__image">
-                        <img src="./assets/images/me.png" alt="My Picture" />
+                </figcaption>
+            </figure>
+
+            <figure class="mix works__item spa all">
+                <img src="./assets/images/works/2.PNG" alt="work 2" />
+                <figcaption class="works__item-details">
+                    <div class="works__item-link">
+                        <a href="https://spa-port-1.netlify.com/" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- hero end -->
-
-        <!-- skills start -->
-        <section class="skills section" id="skills">
-            <div class="container">
-                <h1 class="section__heading">My Skills</h1>
-                <div class="skills__items">
-                    <div class="skills__item">
-                        <i class="fab fa-html5 fa-5x"></i>
-                        <h2>HTML5</h2>
+                    <div class="works__item-detail">
+                        <span>Built by:</span>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                            <li>FontAwesome</li>
+                        </ul>
                     </div>
+                </figcaption>
+            </figure>
 
-                    <div class="skills__item">
-                        <i class="fab fa-css3-alt fa-5x"></i>
-                        <h2>CSS3</h2>
+            <figure class="mix works__item coffee all">
+                <img src="./assets/images/works/3.png" alt="work 3" />
+                <figcaption class="works__item-details">
+                    <div class="works__item-link">
+                        <a href="https://coffee-port-2.netlify.com/" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
                     </div>
-
-                    <div class="skills__item">
-                        <i class="fab fa-sass fa-5x"></i>
-                        <h2>Sass</h2>
+                    <div class="works__item-detail">
+                        <span>Built by:</span>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                            <li>AnimateCSS</li>
+                            <li>FontAwesome</li>
+                        </ul>
                     </div>
+                </figcaption>
+            </figure>
 
-                    <div class="skills__item">
-                        <i class="fab fa-bootstrap fa-5x"></i>
-                        <h2>Bootstrap4</h2>
+            <figure class="mix works__item agency all">
+                <img src="./assets/images/works/4.png" alt="work 4" />
+                <figcaption class="works__item-details">
+                    <div class="works__item-link">
+                        <a href="https://mdrokun.github.io/landing-page-with-modal-form/" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
                     </div>
-
-                    <div class="skills__item">
-                        <i class="fab fa-github fa-5x"></i>
-                        <h2>Git & GitHub</h2>
+                    <div class="works__item-detail">
+                        <span>Built by:</span>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>FontAwesome</li>
+                        </ul>
                     </div>
+                </figcaption>
+            </figure>
 
-                    <div class="skills__item">
-                        <i class="fab fa-gulp fa-5x"></i>
-                        <h2>Gulp</h2>
+            <figure class="mix works__item js all">
+                <img src="./assets/images/works/5.png" alt="work 5" />
+                <figcaption class="works__item-details">
+                    <div class="works__item-link">
+                        <a href="https://mdrokun.github.io/oop-movies-list/" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
                     </div>
-
-                    <div class="skills__item">
-                        <i class="fab fa-npm fa-5x"></i>
-                        <h2>Npm</h2>
+                    <div class="works__item-detail">
+                        <span>Built by:</span>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
                     </div>
+                </figcaption>
+            </figure>
 
-                    <div class="skills__item">
-                        <img
-                            src="https://webpack.js.org/d19378a95ebe6b15d5ddea281138dcf4.svg"
-                            alt="Webpack"
-                        />
-                        <h2>Webpack</h2>
+            <figure class="mix works__item portfolio all">
+                <img src="./assets/images/works/6.png" alt="work 6" />
+                <figcaption class="works__item-details">
+                    <div class="works__item-link">
+                        <a href="https://rokun-portfolio.netlify.com/" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
                     </div>
-
-                    <div class="skills__item">
-                        <i class="fab fa-js fa-5x"></i>
-                        <h2>JavaScript</h2>
+                    <div class="works__item-detail">
+                        <span>Built by:</span>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                            <li>AnimateCSS</li>
+                            <li>FontAwesome</li>
+                        </ul>
                     </div>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <!-- works end -->
 
-                    <div class="skills__item">
-                        <img
-                            class="f-width"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/JQuery-Logo.svg/1280px-JQuery-Logo.svg.png"
-                            alt="jQuery"
-                        />
-                        <h2>jQuery</h2>
-                    </div>
+    <!-- footer start -->
+    <footer class="footer section">
+        <span>Hire me on</span>
+        <!-- <a href="#"><img src="./assets/images/fiverr.png" alt="fiverr"/></a> -->
+        <a href="https://www.fiverr.com/webpage_coder" target="_blank" class="marketplace"></a>
+    </footer>
+    <!-- footer end -->
 
-                    <div class="skills__item">
-                        <i class="fab fa-react fa-5x"></i>
-                        <h2>React JS</h2>
-                    </div>
+    <!-- build:js assets/js/app.js -->
+    <script src="./temp/js/app.js"></script>
+    <!-- endbuild -->
+</body>
 
-                    <div class="skills__item">
-                        <img
-                            class="low-width"
-                            src="https://res.cloudinary.com/avatarhzh/image/upload/v1523067665/portfolio/tech-stack/nextjs.png"
-                            alt="Next JS"
-                        />
-                        <h2>Next JS</h2>
-                    </div>
-
-                    <div class="skills__item">
-                        <img
-                            src="https://javascriptforwp.com/wp-content/uploads/2019/03/badge-gatsby.png"
-                            alt="Gatsby JS"
-                        />
-                        <h2>Gatsby JS</h2>
-                    </div>
-
-                    <div class="skills__item">
-                        <i class="fab fa-node-js fa-5x"></i>
-                        <h2>Node JS</h2>
-                    </div>
-
-                    <!-- <div class="skills__item">
-                        <i class="fas fa-database fa-5x"></i>
-                        <h2>Databases</h2>
-                    </div> -->
-
-                    <div class="skills__item">
-                        <img
-                            class="f-width"
-                            src="https://developers.cloudflare.com/logos/expressjs.svg"
-                            alt="expressjs"
-                        />
-                        <h2>Express JS</h2>
-                    </div>
-
-                    <div class="skills__item">
-                        <img
-                            class="f-width"
-                            src="https://webassets.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png"
-                            alt="mongodb"
-                        />
-                        <h2>MongoDB</h2>
-                    </div>
-
-                    <div class="skills__item">
-                        <i class="fab fa-wordpress fa-5x"></i>
-                        <h2>WordPress</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- skills end -->
-
-        <!-- works start -->
-        <section class="section works" id="works">
-            <h1 class="section__heading">My Works</h1>
-
-            <div class="container works__controls">
-                <ul>
-                    <li data-filter="all" class="active">All</li>
-                    <li data-filter=".psd-to-html">Psd to Html</li>
-                    <li data-filter=".reactjs">React JS</li>
-                </ul>
-            </div>
-
-            <div class="container works__wrapper">
-                <figure class="mix works__item psd-to-html reactjs all">
-                    <img src="./assets/images/works/1.png" alt="work 1" />
-                    <figcaption class="works__item-details">
-                        <div class="works__item-link">
-                            <a href="#"
-                                ><i class="fas fa-external-link-alt"></i
-                            ></a>
-                        </div>
-                        <div class="works__item-detail">
-                            <span>Built by:</span>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>jQuery</li>
-                            </ul>
-                        </div>
-                    </figcaption>
-                </figure>
-
-                <figure class="mix works__item reactjs all">
-                    <img src="./assets/images/works/1.png" alt="work 1" />
-                    <figcaption class="works__item-details">
-                        <div class="works__item-link">
-                            <a href="#"
-                                ><i class="fas fa-external-link-alt"></i
-                            ></a>
-                        </div>
-                        <div class="works__item-detail">
-                            <span>Built by:</span>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>jQuery</li>
-                            </ul>
-                        </div>
-                    </figcaption>
-                </figure>
-
-                <figure class="mix works__item psd-to-html all">
-                    <img src="./assets/images/works/1.png" alt="work 1" />
-                    <figcaption class="works__item-details">
-                        <div class="works__item-link">
-                            <a href="#"
-                                ><i class="fas fa-external-link-alt"></i
-                            ></a>
-                        </div>
-                        <div class="works__item-detail">
-                            <span>Built by:</span>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>jQuery</li>
-                            </ul>
-                        </div>
-                    </figcaption>
-                </figure>
-
-                <figure class="mix works__item psd-to-html reactjs all">
-                    <img src="./assets/images/works/1.png" alt="work 1" />
-                    <figcaption class="works__item-details">
-                        <div class="works__item-link">
-                            <a href="#"
-                                ><i class="fas fa-external-link-alt"></i
-                            ></a>
-                        </div>
-                        <div class="works__item-detail">
-                            <span>Built by:</span>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>jQuery</li>
-                            </ul>
-                        </div>
-                    </figcaption>
-                </figure>
-
-                <figure class="mix works__item reactjs all">
-                    <img src="./assets/images/works/1.png" alt="work 1" />
-                    <figcaption class="works__item-details">
-                        <div class="works__item-link">
-                            <a href="#"
-                                ><i class="fas fa-external-link-alt"></i
-                            ></a>
-                        </div>
-                        <div class="works__item-detail">
-                            <span>Built by:</span>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>jQuery</li>
-                            </ul>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
-        <!-- works end -->
-
-        <!-- footer start -->
-        <footer class="footer section">
-            <span>Hire me on</span>
-            <!-- <a href="#"><img src="./assets/images/fiverr.png" alt="fiverr"/></a> -->
-            <a
-                href="https://fiverr.com"
-                target="_blank"
-                class="marketplace"
-            ></a>
-        </footer>
-        <!-- footer end -->
-
-        <!-- build:js assets/js/app.js -->
-        <script src="./temp/js/app.js"></script>
-        <!-- endbuild -->
-    </body>
 </html>
