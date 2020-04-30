@@ -10,7 +10,7 @@
     "license": "ISC",
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.12.1",
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.0",
         "jquery-smooth-scroll": "^2.2.0",
         "jquery.easing": "^1.4.1",
         "mixitup": "^3.3.1"
